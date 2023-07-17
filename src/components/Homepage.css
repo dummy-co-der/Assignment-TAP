@@ -1,0 +1,156 @@
+.navbar {
+  width: 100%;
+  text-transform: uppercase;
+  font-family: "Nunito", "Helvetica", "Arial", "sans-serif";
+}
+
+.logo {
+  height: 50px;
+  margin-top: 0.5rem;
+  vertical-align: middle;
+}
+
+.navbar_container {
+  max-width: 75%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar_nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  /* cursor: pointer; */
+}
+
+.list_item {
+  margin-right: 1rem;
+  font-family: "Nunito", "Helvetica", "Arial", "sans-serif";
+  font-weight: 200;
+  font-size: small;
+  letter-spacing: 2px;
+}
+
+.homescreen_content {
+  max-width: 75%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.left_heading {
+  margin-top: 0 !important;
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 1.5rem !important;
+  font-family: "Nunito", "Helvetica", "Arial", "sans-serif";
+  line-height: 1.2;
+}
+
+.line_content {
+  line-height: 1.5;
+  font-size: 22px;
+  padding-top: 10px;
+  font-weight: 200;
+  font-family: "Nunito", "Helvetica", "Arial", "sans-serif";
+}
+
+.button1 {
+  margin-right: 2rem;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.3);
+  font-weight: 400;
+  border: 1px solid #eee;
+  padding: 15px 34px;
+  text-transform: uppercase;
+  border-color: #1adb80 !important;
+  background: #1adb80 !important;
+  width: 250px;
+  text-align: center;
+}
+
+.wave_bg_top {
+  z-index: 3;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+}
+
+.wave_wave_top {
+  background-image: url("http://front-end-noobs.com/jecko/img/wave-top.png");
+  animation-delay: 1s;
+  background-size: 50% 100px;
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+
+.wave_bg_middle {
+  z-index: 2;
+  opacity: 0.75;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+}
+
+.wave_wave_middle {
+  background-image: url("http://front-end-noobs.com/jecko/img/wave-mid.png");
+  animation: move_wave 10s linear infinite;
+  background-size: 50% 120px;
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+
+.wave_bg_bottom {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+}
+
+.wave_wave_bottom {
+  background-image: url("http://front-end-noobs.com/jecko/img/wave-bot.png");
+  animation: move_wave 15s linear infinite;
+  background-size: 50% 100px;
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+
+@keyframes move_wave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
