@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import "./Homepage.css";
 
 const Homepage = () => {
-  
   return (
     <div className="homepage">
       <nav className="navbar">
