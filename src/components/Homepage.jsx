@@ -1,7 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./Homepage.css";
 
 const Homepage = () => {
+  
   return (
     <div className="homepage">
       <nav className="navbar">
@@ -38,9 +40,14 @@ const Homepage = () => {
             <button className="button1"> I'M A BRAND </button>
           </div>
         </div>
-        <div className="right">
+        <motion.div
+          className="right"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
           <img src="https://www.freeskout.com/img/top-influencer-profiles/top-3.png" />
-        </div>
+        </motion.div>
       </div>
       <div className="wave">
         <div className="wave_bg_top">
