@@ -3,7 +3,7 @@ import "./Homepage.css";
 
 const Homepage = () => {
   return (
-    <>
+    <div className="homepage">
       <nav className="navbar">
         <div className="navbar_container">
           <div className="navbar_logo">
@@ -42,16 +42,18 @@ const Homepage = () => {
           <img src="https://www.freeskout.com/img/top-influencer-profiles/top-3.png" />
         </div>
       </div>
-      <div className="wave_bg_top">
-        <div className="wave_wave_top" />
+      <div className="wave">
+        <div className="wave_bg_top">
+          <div className="wave_wave_top" />
+        </div>
+        <div className="wave_bg_middle">
+          <div className="wave_wave_middle" />
+        </div>
+        <div className="wave_bg_bottom">
+          <div className="wave_wave_bottom" />
+        </div>
       </div>
-      <div className="wave_bg_middle">
-        <div className="wave_wave_middle" />
-      </div>
-      <div className="wave_bg_bottom">
-        <div className="wave_wave_bottom" />
-      </div>
-    </>
+    </div>
   );
 };
 
